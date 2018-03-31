@@ -6,6 +6,7 @@ import android.hardware.camera2.params.InputConfiguration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.media.AudioManager;
 import android.os.IBinder;
 import android.view.KeyEvent;
 import android.view.View;
@@ -67,7 +68,7 @@ public class MyKeyboard extends InputMethodService implements KeyboardView.OnKey
     }
 
     private void playClick(int i){
-
+        AudioManager am = (AudioManager)getSystemService(AUDIO_SERVICE);
     }
 
     @Override
